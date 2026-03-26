@@ -1,4 +1,4 @@
-CFLAGS := -std=c11 -Wall -Wextra -Werror -pedantic \
+CFLAGS := -std=c++14 -Wall -Wextra -Werror -pedantic \
 	-I../../acunit/src \
 	-I../src
 

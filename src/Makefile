@@ -11,9 +11,10 @@
 #
 # Inspired by https://stackoverflow.com/questions/1079832.
 #------------------------------------------------------------------------------
-
-CFLAGS := -std=c11 -Wall -Wextra -Werror -pedantic
-
+CROSS_COMPILE = arm-rockchip830-linux-uclibcgnueabihf-
+CFLAGS := -std=c++14 -Wall -Wextra -Werror -pedantic -Wno-narrowing
+CC = $(CROSS_COMPILE)g++
+AR = $(CROSS_COMPILE)ar
 #------------------------------------------------------------------------------
 # List of source files
 #------------------------------------------------------------------------------

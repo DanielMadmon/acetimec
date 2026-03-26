@@ -44,7 +44,9 @@ Unix seconds: 1667709000
 #include <stdlib.h> // exit()
 #include <stdio.h>
 #include <acetimec.h>
-
+#ifdef __cplusplus
+  extern "C"{
+#endif
 AtcZoneProcessor processor_la; // Los Angeles
 AtcZoneProcessor processor_ny; // New York
 
@@ -312,3 +314,7 @@ int main(int argc, char **argv)
   setup();
   print_dates();
 }
+
+#ifdef __cplusplus
+  }
+#endif

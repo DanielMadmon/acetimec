@@ -5,7 +5,9 @@
 
 #ifndef ACE_TIME_C_H
 #define ACE_TIME_C_H
-
+#ifdef __cplusplus
+  extern "C" {
+#endif
 /* Version format: xxyyzz == "xx.yy.zz" */
 #define ACE_TIME_C_VERSION 1500
 #define ACE_TIME_C_VERSION_STRING "0.15.0"
@@ -51,5 +53,7 @@
 #else
   #error "Unknown ACE_TIME_C_ZONEDB_RES"
 #endif
-
+#ifdef __cplusplus
+  }
+#endif
 #endif

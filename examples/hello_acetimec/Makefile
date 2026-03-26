@@ -1,6 +1,7 @@
-CFLAGS := -std=c11 -Wall -Wextra -Werror -pedantic \
-	-I../../src
 
+CFLAGS := -std=c++14 -Wall -Wextra -Werror -pedantic -Wno-narrowing -I../../src
+CROSS_COMPILE := arm-rockchip830-linux-uclibcgnueabihf-
+CC = $(CROSS_COMPILE)g++
 hello_acetimec.out: hello_acetimec.c ../../src/acetimec.a
 	$(CC) $(CFLAGS) -o $@ $^
 

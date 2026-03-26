@@ -1,6 +1,9 @@
-CFLAGS := -std=c11 -Wall -Wextra -Werror \
-	-I ../../src\
-	-D _GNU_SOURCE
+CFLAGS := -std=c++14 -Wall -Wextra -Werror -pedantic -Wno-narrowing\
+		  -I../../src\
+		  -D _GNU_SOURCE
+
+CROSS_COMPILE := arm-rockchip830-linux-uclibcgnueabihf-
+CC = $(CROSS_COMPILE)g++
 
 validate_against_libc.out: validate_against_libc.c ../../src/acetimec.a
 	$(CC) $(CFLAGS) -o $@ $^
