@@ -118,7 +118,4 @@ void atc_zoned_date_time_print(
     const AtcZonedDateTime *zdt)
 {
   atc_offset_date_time_print(sb, (const AtcOffsetDateTime *) zdt);
-  atc_print_char(sb, '[');
-  atc_time_zone_print(sb, &zdt->tz);
-  atc_print_char(sb, ']');
 }

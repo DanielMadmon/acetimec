@@ -129,7 +129,7 @@ void atc_plain_date_time_print(
   atc_print_uint16_pad2(sb, pdt->month);
   atc_print_char(sb, '-');
   atc_print_uint16_pad2(sb, pdt->day);
-  atc_print_char(sb, 'T');
+  atc_print_char(sb, ' ');
   atc_print_uint16_pad2(sb, pdt->hour);
   atc_print_char(sb, ':');
   atc_print_uint16_pad2(sb, pdt->minute);
