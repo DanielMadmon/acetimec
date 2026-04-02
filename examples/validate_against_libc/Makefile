@@ -1,4 +1,4 @@
-CFLAGS := -std=c++14 -Wall -Wextra -Werror -pedantic -Wno-narrowing\
+CFLAGS := -std=c++17 -Wall -Wextra -Werror -pedantic -Wno-narrowing\
 		  -I../../src\
 		  -D _GNU_SOURCE
 
